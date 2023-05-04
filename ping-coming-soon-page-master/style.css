@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "live frankil", sans-serif;
+    font-family: "outfit", sans-serif;
+    font-family: "red hat tex", sans-serif;
+}
+header{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+h2{
+    margin-top: 5vh;
+    color: hsl(0, 0%, 59%) ;
+}
+span{
+    font-weight: 800;
+    color: black;
+}
+p{
+    margin-top: 1.5vh;
+    font-weight: lighter;
+}
+.inputbutton{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5vh;
+}
+.input{
+    width: 245px;
+    height: 25px;
+    padding: 5px 0px 5px 30px;
+    border-radius: 50px;
+    border: 1px solid  hsl(223, 100%, 88%);
+    outline: none;
+}
+::placeholder{
+  color:hsl(223, 100%, 88%) ;  
+}
+.error{
+    color: red;
+    font-size: 10px;
+    margin-top: 5px;
+    display: none;
+}
+.button{
+    margin-top: 10px;
+    width: 280px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.illustration{
+    margin-top: 8vh;
+    width: 320px;
+    height: 175px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: hsl(0, 0%, 59%);
+    height: 13vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+    color:hsl(223, 87%, 63%) ;
+    border: 1px solid  hsl(223, 100%, 88%);
+    width: 26px;
+    height: 26px;
+    display: flex;
+    border-radius: 26px;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover{
+    color: white;
+    background-color:hsl(223, 87%, 63%)  ;
+} 
+@media screen and (min-width: 800px){
+    header{
+        height: 10vh;
+    }
+    .headimg{
+        width: 80px;
+    }
+    h2{
+        font-size: 50px;
+        font-weight: lighter;
+    }
+    p{
+        font-size: 25px;
+    }
+    .inputbutton{
+        flex-direction: row;
+    }
+    .error{
+        margin-left: 25px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .input{
+        width: 385px;
+        height: 45px;
+        margin-right:25px ;
+        font-size: 20px;
+    }
+    .button{
+        margin-top: 0px;
+        height: 56px;
+        width: 195px;
+        font-size: 16px;
+    }
+    footer{
+        font-size: 12px;
+    }
+    .fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover{
+    width: 30px;
+    height: 30px;
+}
+.icon{
+    width: 120px;
+}
+.illustration{
+    margin-top: 5vh;
+    width: 680px;
+    height: 380px;
+}
+}
